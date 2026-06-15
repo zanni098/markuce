@@ -13,6 +13,7 @@
     "@solana/spl-token": "^0.4.13",
     "@solana/web3.js": "^1.98.0",
     "@stripe/stripe-js": "^4.4.0",
+    "@stripe/react-stripe-js": "^3.7.0",
     "@supabase/supabase-js": "^2.50.0",
     "buffer": "^6.0.3",
     "ethers": "^6.16.0",
