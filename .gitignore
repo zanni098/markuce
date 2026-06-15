@@ -26,3 +26,8 @@ supabase/.temp
 # Logs
 npm-debug.log*
 yarn-debug.log*
+.vercel
+
+appdeploy.log
+deploy.log
+.env.check
