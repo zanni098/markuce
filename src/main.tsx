@@ -18,14 +18,15 @@ createRoot(root).render(
           position="bottom-right"
           toastOptions={{
             style: {
-              background: '#131D35',
-              color:      '#E8EDF5',
-              border:     '1px solid #1C2B4A',
-              borderRadius: '10px',
+              background: '#FFFFFF',
+              color:      '#15140F',
+              border:     '1px solid #E4E1D8',
+              borderRadius: '12px',
               fontSize:   '14px',
+              boxShadow:  '0 10px 30px -12px rgba(21,20,15,0.25)',
             },
-            success: { iconTheme: { primary: '#00C9A7', secondary: '#131D35' } },
-            error:   { iconTheme: { primary: '#F43F5E', secondary: '#131D35' } },
+            success: { iconTheme: { primary: '#0E7A5F', secondary: '#FFFFFF' } },
+            error:   { iconTheme: { primary: '#C0392B', secondary: '#FFFFFF' } },
           }}
         />
       </AuthProvider>

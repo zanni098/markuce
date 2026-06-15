@@ -33,8 +33,8 @@ export default function Login() {
       <div className="pointer-events-none fixed inset-0"
            style={{
              backgroundImage: `
-               linear-gradient(rgba(88,101,242,0.03) 1px, transparent 1px),
-               linear-gradient(90deg, rgba(88,101,242,0.03) 1px, transparent 1px)
+               linear-gradient(rgba(21,20,15,0.035) 1px, transparent 1px),
+               linear-gradient(90deg, rgba(21,20,15,0.035) 1px, transparent 1px)
              `,
              backgroundSize: '60px 60px',
            }}
@@ -69,7 +69,7 @@ export default function Login() {
             <div className="form-group">
               <div className="flex justify-between items-center mb-1.5">
                 <label className="label mb-0">Password</label>
-                <a href="#" className="text-xs text-primary hover:text-primary/80 transition-colors">
+                <a href="#" className="text-xs text-accent hover:text-accent-dark transition-colors">
                   Forgot password?
                 </a>
               </div>
@@ -109,7 +109,7 @@ export default function Login() {
 
           <p className="mt-5 text-center text-sm text-ink-muted">
             Don't have an account?{' '}
-            <Link to="/register" className="text-primary hover:text-primary/80 transition-colors">
+            <Link to="/register" className="text-accent hover:text-accent-dark font-medium transition-colors">
               Create one free
             </Link>
           </p>

@@ -81,8 +81,8 @@ function Hero() {
       <div className="pointer-events-none absolute inset-0"
            style={{
              backgroundImage: `
-               linear-gradient(rgba(88,101,242,0.04) 1px, transparent 1px),
-               linear-gradient(90deg, rgba(88,101,242,0.04) 1px, transparent 1px)
+               linear-gradient(rgba(21,20,15,0.04) 1px, transparent 1px),
+               linear-gradient(90deg, rgba(21,20,15,0.04) 1px, transparent 1px)
              `,
              backgroundSize: '60px 60px',
            }}
@@ -90,15 +90,15 @@ function Hero() {
 
       {/* Radial glow behind hero */}
       <div className="pointer-events-none absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2
-                       w-[900px] h-[600px] rounded-full opacity-20
-                       bg-[radial-gradient(ellipse,#5865F2,transparent_70%)]" />
+                       w-[900px] h-[600px] rounded-full
+                       bg-[radial-gradient(ellipse,rgba(14,122,95,0.12),transparent_70%)]" />
 
       {/* Pill badge */}
-      <div className="relative mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30
-                       bg-primary/5 px-4 py-1.5 text-xs text-primary">
+      <div className="relative mb-6 inline-flex items-center gap-2 rounded-full border border-accent/30
+                       bg-accent/5 px-4 py-1.5 text-xs text-accent font-medium">
         <span className="relative flex h-2 w-2">
-          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-60" />
-          <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
+          <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
         </span>
         Fully non-custodial · Stripe + Crypto in one
       </div>
@@ -351,8 +351,9 @@ function Pricing() {
           One flat rate. No monthly fee. No surprise charges.
         </p>
 
-        <div className="max-w-lg mx-auto rounded-2xl border border-primary/30
-                         bg-bg-card p-8 shadow-[0_0_60px_var(--primary-glow)]">
+        <div className="max-w-lg mx-auto rounded-2xl border border-border
+                         bg-bg-card p-8 shadow-card relative overflow-hidden">
+          <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-accent to-accent-dark" />
           <div className="text-6xl font-extrabold text-ink mb-1">
             3.4<span className="text-4xl">%</span>
           </div>
@@ -460,13 +461,13 @@ function BottomCTA() {
   return (
     <section className="section">
       <div className="container-tight text-center">
-        <div className="relative rounded-2xl border border-primary/20
-                         bg-gradient-to-b from-primary/5 to-transparent
+        <div className="relative rounded-2xl border border-accent/20
+                         bg-gradient-to-b from-accent/[0.06] to-transparent
                          p-12 overflow-hidden">
           {/* Glow blob */}
           <div className="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2
                            w-96 h-96 rounded-full
-                           bg-[radial-gradient(ellipse,rgba(88,101,242,0.2),transparent_70%)]" />
+                           bg-[radial-gradient(ellipse,rgba(14,122,95,0.14),transparent_70%)]" />
 
           <h2 className="relative text-4xl font-bold text-ink mb-4">
             Ready to sell everywhere?

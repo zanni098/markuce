@@ -75,13 +75,13 @@ export default function Register() {
                            rounded-full bg-success/10 text-success text-2xl">
             ✉️
           </div>
-          <h2 className="text-2xl font-bold text-ink mb-2">Check your inbox</h2>
+          <h2 className="text-2xl font-bold text-ink mb-2">Account created</h2>
           <p className="text-ink-muted mb-6">
-            We sent a confirmation link to <strong className="text-ink">{email}</strong>.
-            Click it to activate your account, then you'll be taken to onboarding.
+            Your account for <strong className="text-ink">{email}</strong> is ready.
+            Sign in to set up your business and start accepting payments.
           </p>
-          <Link to="/login" className="btn-secondary btn-lg justify-center">
-            Back to sign in
+          <Link to="/login" className="btn-primary btn-lg justify-center">
+            Continue to sign in <ArrowRight size={16} />
           </Link>
         </div>
       </div>
@@ -94,8 +94,8 @@ export default function Register() {
       <div className="pointer-events-none fixed inset-0"
            style={{
              backgroundImage: `
-               linear-gradient(rgba(88,101,242,0.03) 1px, transparent 1px),
-               linear-gradient(90deg, rgba(88,101,242,0.03) 1px, transparent 1px)
+               linear-gradient(rgba(21,20,15,0.035) 1px, transparent 1px),
+               linear-gradient(90deg, rgba(21,20,15,0.035) 1px, transparent 1px)
              `,
              backgroundSize: '60px 60px',
            }}
@@ -190,7 +190,7 @@ export default function Register() {
 
           <p className="mt-5 text-center text-sm text-ink-muted">
             Already have an account?{' '}
-            <Link to="/login" className="text-primary hover:text-primary/80 transition-colors">
+            <Link to="/login" className="text-accent hover:text-accent-dark font-medium transition-colors">
               Sign in
             </Link>
           </p>
